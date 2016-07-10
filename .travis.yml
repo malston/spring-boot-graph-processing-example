@@ -26,4 +26,6 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
 
 script:
-  - mvn clean install
+  - mvn test
+  - docker-compose up -d
+  - sudo ./integration-test/integration-test-travis.sh
