@@ -84,7 +84,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <imageName>kbastani/twitter-rank-crawler</imageName>
+                    <imageName>malston/twitter-rank-crawler</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <resources>
                         <resource>

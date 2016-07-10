@@ -69,7 +69,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <imageName>kbastani/twitter-discovery</imageName>
+                    <imageName>malston/twitter-discovery</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <resources>
                         <resource>

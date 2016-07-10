@@ -6,7 +6,7 @@ function tearDown() {
       --env AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
       --env AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
       --env PROJECT_NAME=$PROJECT_NAME \
-      --name=aws kbastani/docker-run-ec2 \
+      --name=aws malston/docker-run-ec2 \
       sh ./aws-delete-instance.sh
 }
 
