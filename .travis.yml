@@ -12,8 +12,12 @@ cache:
   directories:
     - $HOME/.m2/repository/
 
+branches:
+  only:
+    - ci
+
 install:
-  - git clone https://github.com/kbastani/spring-boot-graph-processing-example.git build
+  - git clone https://github.com/malston/spring-boot-graph-processing-example.git build
   - sudo ./build/integration-test/integration-test.sh
 
 script:
