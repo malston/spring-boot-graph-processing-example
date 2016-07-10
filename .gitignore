@@ -72,3 +72,8 @@ fabric.properties
 
 # AWS volume
 aws-volume/
+
+# Eclipse
+.settings
+.project
+.classpath
