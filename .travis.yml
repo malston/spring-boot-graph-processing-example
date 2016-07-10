@@ -1,6 +1,6 @@
-language: java
-
 sudo: required
+
+language: java
 
 services:
   - docker
@@ -18,7 +18,7 @@ branches:
 
 install:
   - git clone https://github.com/malston/spring-boot-graph-processing-example.git build
-  - sudo ./build/integration-test/integration-test.sh
+  - ./build/integration-test/integration-test.sh
 
 script:
-  - sudo ./build/integration-test/build.sh
+  - ./build/integration-test/build.sh
