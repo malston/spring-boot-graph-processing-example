@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -evx
+set -e
 
 function health_check() {
     HEALTH_CHECK_READY=
