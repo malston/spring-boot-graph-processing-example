@@ -17,7 +17,7 @@ branches:
     - ci
 
 env:
-  DOCKER_COMPOSE_VERSION: 1.6.2
+  DOCKER_COMPOSE_VERSION: 1.4.2
 
 before_install:
   - sudo rm /usr/local/bin/docker-compose
