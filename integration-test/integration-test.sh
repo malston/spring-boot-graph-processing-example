@@ -8,7 +8,7 @@ function setup() {
       --env AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
       --env PROJECT_NAME=$PROJECT_NAME \
       --env EC2_INSTANCE_TYPE=$EC2_INSTANCE_TYPE \
-      --name=aws malston/docker-run-ec2 \
+      --name=aws kbastani/docker-run-ec2 \
       sh ./aws-create-instance.sh
 }
 
@@ -17,7 +17,7 @@ function tearDown() {
       --env AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
       --env AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
       --env PROJECT_NAME=$PROJECT_NAME \
-      --name=aws malston/docker-run-ec2 \
+      --name=aws kbastani/docker-run-ec2 \
       sh ./aws-delete-instance.sh
 }
 
@@ -27,7 +27,7 @@ function run() {
       --env AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
       --env PROJECT_NAME=$PROJECT_NAME \
       --env DOCKER_COMMAND="$1" \
-      --name=aws malston/docker-run-ec2 \
+      --name=aws kbastani/docker-run-ec2 \
       sh ./ssh-docker-run.sh
 
     # Continue until the health check connection is ready
