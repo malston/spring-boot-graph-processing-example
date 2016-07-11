@@ -25,7 +25,9 @@ before_install:
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
 
-script:
-  - mvn test
+install:
   - docker-compose up -d
   - ./integration-test/integration-test-travis.sh
+
+script:
+  - ./integration-test/build.sh
