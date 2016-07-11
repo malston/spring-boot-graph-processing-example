@@ -28,6 +28,7 @@ before_install:
 install:
   - mvn package -DskipTests -B -V
   - docker-compose up -d
+  - docker inspect -f '{{ .NetworkSettings.IPAddress }}' crawler
   - ./integration-test/integration-test-travis.sh
 
 script:

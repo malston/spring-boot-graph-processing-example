@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -ex
 
 export PUBLIC_IP="locahost"
 export SPRING_NEO4J_HOST=$PUBLIC_IP
