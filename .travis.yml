@@ -30,4 +30,4 @@ install:
   - ./integration-test/integration-test-travis.sh
 
 script:
-  - ./integration-test/build.sh
+  - ./integration-test/build-travis.sh
