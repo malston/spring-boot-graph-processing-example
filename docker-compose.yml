@@ -42,7 +42,7 @@ twitter-rank-web:
    - config
    - discovery
   environment:
-    SPRING_PROFILES_ACTIVE: "production"
+    SPRING_PROFILES_ACTIVE: "test"
 twitter-rank-crawler:
   container_name: crawler
   image: malston/twitter-rank-crawler:latest
@@ -58,7 +58,7 @@ twitter-rank-crawler:
     SPRING_SOCIAL_TWITTER_ACCESSTOKEN: "REPLACE"
     SPRING_SOCIAL_TWITTER_APPSECRET: "REPLACE"
     SPRING_SOCIAL_TWITTER_APPID: "REPLACE"
-    SPRING_PROFILES_ACTIVE: "production"
+    SPRING_PROFILES_ACTIVE: "test"
 scope:
   container_name: weave-scope
   volumes:
