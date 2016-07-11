@@ -27,7 +27,7 @@ public class TwitterCrawlerTests {
     private int port = 0;
 
     @Test
-    @IfProfileValue(name = "test")
+    @IfProfileValue(name="tests", values="integration")
     public void crawlUser() {
         ResponseEntity<User> user1 = new TestRestTemplate().getForEntity("http://localhost:" + port + "/v1/user/kennybastani", User.class);
         assertEquals(HttpStatus.OK, user1.getStatusCode());
