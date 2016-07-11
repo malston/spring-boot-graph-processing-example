@@ -28,5 +28,5 @@ before_install:
 script:
   - mvn test
   - docker-compose up -d
-  - ls -al
+  - env
   - ./integration-test/integration-test-travis.sh
