@@ -29,11 +29,11 @@ public class TwitterCrawlerTests {
     @Test
     @IfProfileValue(name="tests", values="integration")
     public void crawlUser() {
-        ResponseEntity<User> user1 = new TestRestTemplate().getForEntity("http://localhost:" + port + "/v1/user/kennybastani", User.class);
+        ResponseEntity<User> user1 = new TestRestTemplate().getForEntity("http://localhost:" + 8080 + "/v1/user/kennybastani", User.class);
         assertEquals(HttpStatus.OK, user1.getStatusCode());
-        ResponseEntity<User> user2 = new TestRestTemplate().getForEntity("http://localhost:" + port + "/v1/user/bridgetkromhout", User.class);
+        ResponseEntity<User> user2 = new TestRestTemplate().getForEntity("http://localhost:" + 8080 + "/v1/user/bridgetkromhout", User.class);
         assertEquals(HttpStatus.OK, user2.getStatusCode());
-        ResponseEntity<User> user3 = new TestRestTemplate().getForEntity("http://localhost:" + port + "/v1/user/starbuxman", User.class);
+        ResponseEntity<User> user3 = new TestRestTemplate().getForEntity("http://localhost:" + 8080 + "/v1/user/starbuxman", User.class);
         assertEquals(HttpStatus.OK, user3.getStatusCode());
     }
 }
