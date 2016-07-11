@@ -26,6 +26,7 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
 
 install:
+  - mvn package -DskipTests -B -V
   - docker-compose up -d
   - ./integration-test/integration-test-travis.sh
 
