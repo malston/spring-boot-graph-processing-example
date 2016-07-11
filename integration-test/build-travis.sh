@@ -7,5 +7,6 @@ export SPRING_RABBITMQ_HOST=$PUBLIC_IP
 export EUREKA_CLIENT_SERVICEURL_DEFAULTZONE="http://$PUBLIC_IP:8761/eureka/"
 export SPRING_CLOUD_CONFIG_URI="http://$PUBLIC_IP:8888"
 
-# Run tests and tear down
-mvn clean install -Dtests=integration || die "'mvn clean install' failed" 1
+# Run integration tests
+# mvn clean install -Dtests=integration || die "'mvn clean install' failed" 1
+mvn clean install || die "'mvn clean install' failed" 1
